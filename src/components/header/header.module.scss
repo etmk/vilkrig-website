@@ -102,6 +102,11 @@ nav {
     .toggle-open {
       transform: translateX(0%);
     }
+
+    html.toogle-open {
+      position: fixed;
+      overflow: hidden;
+    }
     .toggle-closed {
       transform: translateX(-100%);
     }
