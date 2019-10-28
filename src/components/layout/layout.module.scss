@@ -1,3 +1,6 @@
+@import "../../assets/styles/colors";
+@import "../../assets/styles/fonts";
+
 @font-face {
   font-family: Recoleta-Regular;
   font-display: swap;
@@ -23,8 +26,8 @@
   list-style: none;
 }
 
-html {
-  font: 100%/1.55 "IBM Plex Sans", sans-serif;
+body {
+  font: 100%/1.55 $font-stack;
   opacity: 1;
 }
 
@@ -37,7 +40,7 @@ h6 {
   font-family: "Recoleta-Regular", Times, serif;
   margin-bottom: 1.5rem;
   line-height: 1.2;
-  color: #051d25;
+  color: $black;
 }
 
 h1 {
@@ -80,7 +83,7 @@ p {
 }
 
 a {
-  color: #000000;
+  color: $black;
 }
 
 input:focus,
@@ -88,59 +91,4 @@ select:focus,
 textarea:focus,
 button:focus {
   outline: none;
-}
-
-.header-image {
-  border-radius: 10px;
-}
-
-.intro {
-  max-width: 1200px;
-  margin: 0 auto;
-
-  padding: 10vh 8vw;
-
-  .title {
-    margin-bottom: 50px;
-    font-size: 72px;
-    line-height: 1.2;
-    font-weight: 300;
-    color: #000;
-  }
-  .title::after {
-    content: "";
-    display: block;
-    height: 2px;
-    width: 15px;
-    background-color: #8c8c8c;
-    margin-top: 35px;
-  }
-  p {
-    font-size: 20px;
-    line-height: 1.5;
-    font-weight: 300;
-    margin-bottom: 5rem;
-    color: #000;
-  }
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-bottom: 15vh;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0vh 8vw 16vh 8vw;
-}
-
-.card-title {
-  margin-top: auto;
-  color: #000;
-  margin-bottom: 0.5rem;
-}
-
-.card-subtitle {
-  text-transform: uppercase;
-  margin-bottom: 0;
 }

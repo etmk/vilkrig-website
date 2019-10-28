@@ -1,13 +1,14 @@
+@import "../../assets/styles/colors";
+
 header {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  max-width: 100em;
-  margin: 0 auto;
+  max-width: 75em;
   padding: 0 2rem;
   position: sticky;
   z-index: 10;
-  max-width: 1200px;
   margin: 0 auto;
+  background: $brand-color;
 }
 
 .logo {
@@ -29,31 +30,21 @@ nav {
     justify-content: flex-end;
     opacity: 1;
     li {
-      padding: 4vh 1.5vw;
+      padding: 2rem 1.5rem;
       font-weight: 400;
-    }
-    .btn {
-      padding: 1rem 2rem;
-      border-radius: 5px;
-      border: none;
-      font-size: 0.8rem;
-      background-color: #000;
-      color: #fff;
-      margin: 1.5rem 0;
-      text-align: center;
-      cursor: pointer;
-      transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+      font-size: 0.9rem;
     }
     a:hover {
-      color: #000;
-      border-bottom: 2.5px solid #051d25;
+      color: $black;
+      border-bottom: 2px solid $black;
       padding-bottom: 4px;
     }
 
     .active-nav-item {
-      color: #000;
-      border-bottom: 2.5px solid #051d25;
+      color: $black;
+      border-bottom: 2px solid $black;
       padding-bottom: 4px;
+      transition: border-bottom 80ms ease-in-out;
     }
   }
 }
@@ -94,13 +85,13 @@ nav {
       }
       a:hover {
         color: #000;
-        border-bottom: 2.5px solid #051d25;
+        border-bottom: 2.5px solid $black;
         padding-bottom: 1px;
       }
 
       .active-nav-item {
         color: #000;
-        border-bottom: 2.5px solid #051d25;
+        border-bottom: 2.5px solid $black;
         padding-bottom: 1px;
       }
     }

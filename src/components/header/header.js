@@ -40,6 +40,15 @@ class Header extends Component {
             </li>
             <li className={styles.navItem}>
               <Link
+                to="/projects"
+                onClick={this.handleClick.bind(this, 3)}
+                activeClassName={styles.activeNavItem}
+              >
+                Projects
+              </Link>
+            </li>
+            <li className={styles.navItem}>
+              <Link
                 to="/services"
                 onClick={this.handleClick.bind(this, 3)}
                 activeClassName={styles.activeNavItem}
