@@ -1,14 +1,18 @@
 @import "../../assets/styles/colors";
 
 header {
+  background: $brand-color;
+}
+
+.header-grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  max-width: 75em;
   padding: 0 2rem;
   position: sticky;
   z-index: 10;
+
+  max-width: 75em;
   margin: 0 auto;
-  background: $brand-color;
 }
 
 .logo {
@@ -30,7 +34,7 @@ nav {
     justify-content: flex-end;
     opacity: 1;
     li {
-      padding: 2rem 1.5rem;
+      padding: 3rem 1.5rem;
       font-weight: 400;
       font-size: 0.9rem;
     }
