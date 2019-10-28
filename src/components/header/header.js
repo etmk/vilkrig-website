@@ -1,10 +1,7 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
-import Logo from "../../assets/logo.svg"
-
+import Logo from "../../assets/images/logo.svg"
 import HamburgerMenu from "react-hamburger-menu"
-
-//import("./header.module.scss")
 import styles from "./header.module.scss"
 
 class Header extends Component {

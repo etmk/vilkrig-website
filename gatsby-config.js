@@ -10,6 +10,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
+    "gatsby-plugin-react-svg",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -29,6 +30,16 @@ module.exports = {
         theme_color: `#004156`,
         display: `standalone`,
         icon: `${__dirname}/src/assets/images/icon.png`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `IBM Plex Sans`,
+          },
+        ],
       },
     },
     {
