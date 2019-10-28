@@ -1,0 +1,114 @@
+header {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  max-width: 100em;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: sticky;
+  z-index: 10;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 11;
+  a svg {
+    max-width: 7rem;
+    height: auto;
+  }
+}
+
+nav {
+  .nav-items {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-end;
+    opacity: 1;
+    li {
+      padding: 4vh 1.5vw;
+      font-weight: 400;
+    }
+    .btn {
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      border: none;
+      font-size: 0.8rem;
+      background-color: #000;
+      color: #fff;
+      margin: 1.5rem 0;
+      text-align: center;
+      cursor: pointer;
+      transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    a:hover {
+      color: #000;
+      border-bottom: 2.5px solid #051d25;
+      padding-bottom: 4px;
+    }
+
+    .active-nav-item {
+      color: #000;
+      border-bottom: 2.5px solid #051d25;
+      padding-bottom: 4px;
+    }
+  }
+}
+
+.mobile-nav {
+  display: none;
+}
+
+@media (max-width: 799px) {
+  nav {
+    .mobile-nav {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 2.5rem 0;
+    }
+
+    .nav-items {
+      background-color: #d1d3d9;
+      position: fixed;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      height: 100%;
+      left: 0;
+      top: 0;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      transition: transform 0.35s ease-in;
+
+      li {
+        font-family: Recoleta-Medium;
+        font-size: 1.75rem;
+        cursor: pointer;
+        padding: 2.5vw;
+      }
+      a:hover {
+        color: #000;
+        border-bottom: 2.5px solid #051d25;
+        padding-bottom: 1px;
+      }
+
+      .active-nav-item {
+        color: #000;
+        border-bottom: 2.5px solid #051d25;
+        padding-bottom: 1px;
+      }
+    }
+    .toggle-open {
+      transform: translateX(0%);
+    }
+    .toggle-closed {
+      transform: translateX(-100%);
+    }
+  }
+}
